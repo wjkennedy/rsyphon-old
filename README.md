@@ -1,10 +1,7 @@
 rsyphon
 ======
 
-
-First Things First
---------------------------------------------------------------------------------
-All documentation is in /usr/share/doc/rsyphon-*
+Proper documentation is in /usr/share/doc/rsyphon-*
 
 Read at _least_ the HOWTO section of the manual:
 
