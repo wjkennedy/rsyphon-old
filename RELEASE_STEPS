@@ -1,0 +1,9 @@
+- Increment version string in:
+  - VERSION
+  - debian/changelog (using dch -i)
+  - autoconf/configure.ac 
+  - re-generate configure by:
+    $ cd autoconf && ./bootstrap && rm -rf autom4te.cache aclocal.m4
+- Build packages:
+    $ make source_tarball && make deb && make rpm && make docs
+- Upload packages, source tarball and PDF manual

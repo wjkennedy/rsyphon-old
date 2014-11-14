@@ -1,0 +1,2 @@
+After dropping a new .rul file in here, be sure that you also 
+explicitly include it in the ./initrd_source/initrd.rul file.

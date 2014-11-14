@@ -1,0 +1,21 @@
+
+0c
+0c
+0c
+0c
+0c
+0c
+
+07  This is rsyphon vRSYPHON_VERSION_STRING
+
+0f  >>> DESTRUCTIVE SYSTEM LOAD WILL COMMENCE <<< 
+
+08  The rsyphon boot system will partition your hard drives, create filesystems
+08  on those partitions, and create your swap space.  It will then contact your
+08  imageserver and install the designated image on this machine.
+
+
+08  You can find documentation and support at 09http://rsyphon.a9group.net/
+
+07  (c) 2014 A9 Consulting Group
+
