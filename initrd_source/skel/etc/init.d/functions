@@ -27,8 +27,8 @@ TORRENTS=torrents
 TORRENTS_DIR=/torrents
 FLAMETHROWER_DIRECTORY_DIR=/var/lib/rsyphon/flamethrower
 ISYS_BINARIES_DIR=/tmp/isys_binaries
-VERSION="SYSTEMIMAGER_VERSION_STRING"
-FLAVOR="SYSTEMIMAGER_FLAVOR_STRING"
+VERSION="RSYPHON_VERSION_STRING"
+FLAVOR="RSYPHON_FLAVOR_STRING"
 #
 ################################################################################
 

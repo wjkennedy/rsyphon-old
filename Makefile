@@ -103,7 +103,7 @@ TOPDIR  := $(CURDIR)
 
 # RELEASE_DOCS are toplevel files that should be included with all posted
 # tarballs, but aren't installed onto the destination machine by default
-RELEASE_DOCS = CHANGE.LOG COPYING CREDITS README VERSION
+RELEASE_DOCS = COPYING CREDITS README VERSION
 
 ARCH = $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ -e s/arm.*/arm/ -e s/sa110/arm/)
 
@@ -193,7 +193,7 @@ RSYNC_STUB_DIR = $(ETC)/rsyphon/rsync_stubs
 
 CHECK_FLOPPY_SIZE = expr \`du -b $(INITRD_DIR)/initrd.img | cut -f 1\` + \`du -b $(LINUX_IMAGE) | cut -f 1\`
 
-RS_INSTALL = $(TOPDIR)/tools/rs_install --si-prefix=$(PREFIX)
+RS_INSTALL = $(TOPDIR)/tools/rs_install --rs-prefix=$(PREFIX)
 GETSOURCE = $(TOPDIR)/tools/getsource
 
 # Some root tools are probably needed to build rsyphon packages, so

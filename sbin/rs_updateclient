@@ -48,7 +48,7 @@ use rsyphon::UseYourOwnKernel;
 use vars qw($config $VERSION);
 
 # set version number
-my $VERSION = "SYSTEMIMAGER_VERSION_STRING";
+my $VERSION = "RSYPHON_VERSION_STRING";
 
 # Make sure proper things are in the path.
 $ENV{PATH} = "/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin";
@@ -537,8 +537,8 @@ SC_EOF
     # Because rsync exclusions must be relative to the root of the directory being copied, strip 
     # off the specified -directory from the beginning of each exclusion path. -BEF
     #
-    open(SYSTEMIMAGER_EXCLUDE, "<$exclude_file") or croak("Couldn't open $exclude_file for reading!");
-    while (<SYSTEMIMAGER_EXCLUDE>) {
+    open(RSYPHON_EXCLUDE, "<$exclude_file") or croak("Couldn't open $exclude_file for reading!");
+    while (<RSYPHON_EXCLUDE>) {
       if (m|^\s*$directory|) {  # match non commented explicit path
         chomp;
         s|^$directory|/|;
@@ -546,7 +546,7 @@ SC_EOF
         $cmdopts .= " --exclude=$_";
       }
     }
-    close(SYSTEMIMAGER_EXCLUDE);
+    close(RSYPHON_EXCLUDE);
 
     # Append currently mounted non supported filesystems to exclusions list.
     # ( $config-fstype() returns a reference to an array.  We store that in

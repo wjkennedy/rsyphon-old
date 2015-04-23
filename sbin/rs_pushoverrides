@@ -14,7 +14,7 @@ use vars qw($config $VERSION);
 
 my $program_name = basename($0);
 
-my $VERSION = "SYSTEMIMAGER_VERSION_STRING";
+my $VERSION = "RSYPHON_VERSION_STRING";
 
 my $version_info = << "EOF";
 $program_name (part of rsyphon) v$VERSION

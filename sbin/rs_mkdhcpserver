@@ -23,7 +23,7 @@ use rsyphon::HostRange;
 use vars qw($VERSION);
 
 # set some variables
-$VERSION="SYSTEMIMAGER_VERSION_STRING";
+$VERSION="RSYPHON_VERSION_STRING";
 my $program_name="rs_mkdhcpserver";
 my $get_help = "  Try \"$program_name -help\" for more options.";
 

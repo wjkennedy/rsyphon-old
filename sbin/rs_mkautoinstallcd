@@ -44,7 +44,7 @@ use vars qw($config $VERSION $quiet);
 
 $SIG{__DIE__} = \&bailing_umount;
 
-$VERSION = "SYSTEMIMAGER_VERSION_STRING";
+$VERSION = "RSYPHON_VERSION_STRING";
 
 # set path for system calls
 $ENV{PATH} = "/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin";

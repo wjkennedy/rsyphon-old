@@ -33,7 +33,7 @@
 $ENV{PATH} = "/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin";
 
 # version
-$version_number="SYSTEMIMAGER_VERSION_STRING";
+$version_number="RSYPHON_VERSION_STRING";
 
 # miscellaneous variables and what not
 # NIS domain name will be figured out automatically (if it exists)

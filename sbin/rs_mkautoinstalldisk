@@ -13,7 +13,7 @@ use rsyphon::Common;
 use rsyphon::Server;
 use vars qw($config $VERSION);
 
-my $VERSION = "SYSTEMIMAGER_VERSION_STRING";
+my $VERSION = "RSYPHON_VERSION_STRING";
 
 my $program_name = "rs_mkautoinstalldisk";
 

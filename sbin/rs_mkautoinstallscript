@@ -35,7 +35,7 @@ unless ($rsyncd_conf) {
 }
 ### END parse the config file ###
 
-$VERSION="SYSTEMIMAGER_VERSION_STRING";
+$VERSION="RSYPHON_VERSION_STRING";
 $program_name = "rs_mkautoinstallscript";
 $version_info = <<"EOF";
 $program_name (part of rsyphon) v$VERSION

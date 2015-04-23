@@ -226,7 +226,7 @@
           </para>
           <para>
 	    This file is copied to /local.cfg into the initrd.img.  See
-	    <filename>/usr/share/doc/rsyphon-server-SYSTEMIMAGER_VERSION_STRING/local.cfg</filename>
+	    <filename>/usr/share/doc/rsyphon-server-RSYPHON_VERSION_STRING/local.cfg</filename>
 	    (or <filename>/usr/share/doc/rsyphon-server/examples/local.cfg</filename> in Debian-like
 	    distributions) for a well commented example.
           </para>

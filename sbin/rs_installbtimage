@@ -15,7 +15,7 @@ use vars qw($config $VERSION);
 
 my $config_dir = "/etc/rsyphon";
 
-my $VERSION = "SYSTEMIMAGER_VERSION_STRING";
+my $VERSION = "RSYPHON_VERSION_STRING";
 my $program_name = "rs_installbtimage";
 my $version_info = << "EOF";
 $program_name (part of rsyphon) v$VERSION

@@ -12,7 +12,7 @@ DESTDIR =
 PREFIX = /usr
 USR = $(DESTDIR)$(PREFIX)
 
-SYSTEMIMAGER_VERSION = $(shell cat ../../VERSION)
+RSYPHON_VERSION = $(shell cat ../../VERSION)
 
 MANPAGES = $(SERVER_MAN) $(SERVER_POD_MAN) $(CLIENT_MAN) $(COMMON_MAN)
 
@@ -56,43 +56,43 @@ all:	compress
 	gzip -9 < $< > $@
 
 rsyphon.conf.5:	rsyphon.conf.pod
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 5 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 5 -c "rsyphon" $< $@
 
 rsyphon-rsyncd.conf.5:	rsyphon-rsyncd.conf.pod
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 5 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 5 -c "rsyphon" $< $@
 
 rs_installbtimage.8: $(TOPDIR)/sbin/rs_installbtimage
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 rs_monitor.8: $(TOPDIR)/sbin/rs_monitor
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 rs_monitortk.8: $(TOPDIR)/sbin/rs_monitortk
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 rs_pcp.8: $(TOPDIR)/sbin/rs_pcp
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 rs_psh.8: $(TOPDIR)/sbin/rs_psh
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 rs_pushinstall.8: $(TOPDIR)/sbin/rs_pushinstall
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 rs_pushoverrides.8: $(TOPDIR)/sbin/rs_pushoverrides
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 rs_mkautoinstalldisk.8: $(TOPDIR)/sbin/rs_mkautoinstalldisk
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 rs_netbootmond.8: $(TOPDIR)/sbin/rs_netbootmond
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 rs_clusterconfig.8: $(TOPDIR)/sbin/rs_clusterconfig
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 rs_pushupdate.8: $(TOPDIR)/sbin/rs_pushupdate
-	pod2man --release=$(SYSTEMIMAGER_VERSION) -s 8 -c "rsyphon" $< $@
+	pod2man --release=$(RSYPHON_VERSION) -s 8 -c "rsyphon" $< $@
 
 %.5 %.8:	%.sgml %.content.sgml
 	docbook2man $<

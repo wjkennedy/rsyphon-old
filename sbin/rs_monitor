@@ -24,7 +24,7 @@ use rsyphon::Config;
 use vars qw($config $VERSION);
 use constant DEFAULT_PORT => 8181;
 
-my $VERSION = "SYSTEMIMAGER_VERSION_STRING";
+my $VERSION = "RSYPHON_VERSION_STRING";
 my $program_name = "rs_monitor";
 my $version_info = << "EOF";
 $program_name (part of rsyphon) v$VERSION

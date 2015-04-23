@@ -21,7 +21,7 @@ sub ButtonRelease_1 {
 package main;
 
 # set version number
-my $VERSION = "SYSTEMIMAGER_VERSION_STRING";
+my $VERSION = "RSYPHON_VERSION_STRING";
 my $program_name = "rs_monitortk";
 
 use Socket;

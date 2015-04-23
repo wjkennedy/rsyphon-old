@@ -38,7 +38,7 @@ Install the appropriate build dependencies for your distribution.
     yum install rpm-build patch wget flex bc docbook-utils dos2unix device-mapper-devel gperf pam-devel quilt lzop glib2-devel PyXML glibc-static xz e2fsprogs-devel libtool libuuid-devel gettext-devel python-devel readline-devel binutils-devel openssl-devel
 
 ## Debian: ##
-    apt-get install build-essential flex libtool uuid-dev gettext python-dev libssl-dev zlib1g-dev
+    apt-get install build-essential flex libtool uuid-dev gettext python-dev libssl-dev zlib1g-dev libgusb-dev libglib2.0-dev gperf
 
 Run './configure'
 

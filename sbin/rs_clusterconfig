@@ -15,7 +15,7 @@ use rsyphon::Config;
 use rsyphon::HostRange;
 use vars qw($config);
 
-my $VERSION = "SYSTEMIMAGER_VERSION_STRING";
+my $VERSION = "RSYPHON_VERSION_STRING";
 
 my $program_name = "rs_clusterconfig";
 

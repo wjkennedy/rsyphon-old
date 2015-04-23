@@ -19,7 +19,7 @@ use vars qw($config $VERSION);
 
 ### BEGIN Program ###
 # set version information
-my $VERSION = "SYSTEMIMAGER_VERSION_STRING";
+my $VERSION = "RSYPHON_VERSION_STRING";
 my $program_name = "rs_addclients";
 my $version_info = <<"EOF";
 $program_name (part of rsyphon) v$VERSION

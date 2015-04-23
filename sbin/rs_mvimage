@@ -9,7 +9,7 @@
 #
 
 # set some variables
-my $VERSION = "SYSTEMIMAGER_VERSION_STRING";
+my $VERSION = "RSYPHON_VERSION_STRING";
 my $program_name="rs_mvimage";
 my $get_help = "         Try \"$program_name -help\" for more options.";
 

@@ -86,7 +86,7 @@ use rsyphon::Common;
 use rsyphon::UseYourOwnKernel;
 
 # set version
-$VERSION = "SYSTEMIMAGER_VERSION_STRING";
+$VERSION = "RSYPHON_VERSION_STRING";
 
 # set extension to use when backing up config files
 my $backup_extension = ".before_rsyphon-$VERSION";
@@ -227,7 +227,7 @@ Options:
     Where FILE contains all the settings necessary for the client to set
     its hostname and configure its networking information without DHCP.
     This file is copied to /local.cfg into the initrd.img.  See
-    /usr/share/doc/rsyphon-server-SYSTEMIMAGER_VERSION_STRING/local.cfg
+    /usr/share/doc/rsyphon-server-RSYPHON_VERSION_STRING/local.cfg
     for a well commented example.
 
 Download, report bugs, and make suggestions at:

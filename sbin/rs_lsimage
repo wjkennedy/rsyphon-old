@@ -15,7 +15,7 @@ use Fcntl ':flock';
 use Getopt::Long;
 
 # set some variables
-$version_number="SYSTEMIMAGER_VERSION_STRING";
+$version_number="RSYPHON_VERSION_STRING";
 $program_name="rs_lsimage";
 $get_help = "         Try \"$program_name --help\" for more options.";
 $imageserver="127.0.0.1";
