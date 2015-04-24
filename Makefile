@@ -8,9 +8,6 @@
 #   Others who have contributed to this code:
 #   	Sean Dague <sean@dague.net>
 #
-#   $Id$
-# 	 vi: set filetype=make:
-#
 #   2012.03.09  Brian Elliott Finley
 #   * Fix egrep regex so that e2fsprogs targets show with 'make show_all_targets'
 #
@@ -677,7 +674,7 @@ show_build_deps:
 	@echo "   The easiest path is to cut and paste the command below that is"
 	@echo "   appropriate for your distribution."
 	@echo
-	@echo "   Ubuntu 12.04, 12.10:"
+	@echo "   Ubuntu 14.04, 12.10:"
 	@echo "     apt-get install build-essential rpm flex $(UBUNTU_PRECISE_BUILD_DEPS)"
 	@echo
 	@echo "   Ubuntu 6.06:"
@@ -690,7 +687,7 @@ show_build_deps:
 	@echo "     apt-get install build-essential flex $(DEBIAN_STABLE_BUILD_DEPS)"
 	@echo     
 	@echo "   NOTE: Other distro versions may build fine, and are simply untested by"
-	@echo "         the SystemImage dev team."
+	@echo "         the rsyphon dev team."
 	@echo
 	@echo "2) Run './configure'"
 	@echo
