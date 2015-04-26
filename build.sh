@@ -1,17 +1,17 @@
 # /bin/bash
-#- Build packages:
-#- Upload packages, source tarball and PDF manual
+# rsyphon build wrapper
+# william@a9group.net
+#Sun Apr 26 08:06:10 PDT 2015
  
 
 build(){
-echo "Building..."
+echo "rsyphon"
+echo
 PWD=$(pwd)
 cd autoconf && ./bootstrap && rm -rf autom4te.cache aclocal.m4
-
-# Not on a debian build system at the moment
-#cd .. && make source_tarball && make deb && make rpm && make docs
-cd .. && make source_tarball && make rpm && make docs
-
+cd ..
+make source_tarball
+sh makeself/makeself.sh rsyphon.d/ rsyphon-0.$MAJOR.$VERSION.run "rsyphon installer" ./rsyphon.init.sh
 }
 
 bump_rev(){
@@ -48,3 +48,4 @@ fi
 }
 
 bump_rev
+
