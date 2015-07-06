@@ -17,7 +17,7 @@ OPENSSL_VERSION		= 1.0.1e
 OPENSSL_MD5SUM      = 66bf6f10f060d561929de96f9dfe5b8c
 OPENSSL_TARBALL 	= openssl-$(OPENSSL_VERSION).tar.gz
 OPENSSL_URL		= http://www.openssl.org/source/$(OPENSSL_TARBALL)
-#OPENSSL_URL 		= http://os.a9group.net/isys//pub/openssl/$(OPENSSL_TARBALL)
+#OPENSSL_URL 		= http://os.a9group.net/rsys//pub/openssl/$(OPENSSL_TARBALL)
 OPENSSL_DIR 		= $(INITRD_SRC_DIR)/openssl-$(OPENSSL_VERSION)
 OPENSSL_PATCHES 	= $(shell ls $(INITRD_PATCH_DIR)/openssl.*.patch 2>/dev/null | sort)
 
