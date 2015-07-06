@@ -3,7 +3,7 @@
 UDEV_VERSION	= 182
 UDEV_TARBALL	= udev-$(UDEV_VERSION).tar.xz
 UDEV_URL	= http://www.kernel.org/pub/linux/utils/kernel/hotplug/
-#UDEV_URL	= http://os.a9group.net/isys//pub/udev/
+#UDEV_URL	= http://os.a9group.net/rsys//pub/udev/
 UDEV_DIR	= $(INITRD_SRC_DIR)/udev-$(UDEV_VERSION)
 
 UDEV_PATCHES = $(shell ls $(INITRD_PATCH_DIR)/udev.*.patch 2>/dev/null | sort)
