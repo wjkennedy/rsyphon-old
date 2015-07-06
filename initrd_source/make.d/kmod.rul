@@ -3,7 +3,7 @@
 KMOD_VERSION	= 13
 KMOD_TARBALL	= kmod-$(KMOD_VERSION).tar.xz
 KMOD_URL	= http://www.kernel.org/pub/linux/utils/kernel/kmod
-#KMOD_URL	= http://os.a9group.net/isys//pub/kmod
+#KMOD_URL	= http://os.a9group.net/rsys//pub/kmod
 KMOD_DIR	= $(INITRD_SRC_DIR)/kmod-$(KMOD_VERSION)
 
 KMOD_PATCHES = $(shell ls $(INITRD_PATCH_DIR)/kmod.*.patch 2>/dev/null | sort)
