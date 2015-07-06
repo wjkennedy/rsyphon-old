@@ -5,7 +5,7 @@ OPENSSH_MD5SUM		= e6ee52e47c768bf0ec42a232b5d18fb0
 OPENSSH_TARBALL 	= openssh-$(OPENSSH_VERSION).tar.gz
 #OPENSSH_URL		 = ftp://mirror.sg.depaul.edu/pub/OpenBSD/OpenSSH/portable/$(OPENSSH_TARBALL)
 OPENSSH_URL		= http://ftp.vim.org/security/OpenSSH/$(OPENSSH_TARBALL)
-#OPENSSH_URL 		= http://os.a9group.net/isys//pub/openssh/$(OPENSSH_TARBALL)
+#OPENSSH_URL 		= http://os.a9group.net/rsys//pub/openssh/$(OPENSSH_TARBALL)
 OPENSSH_DIR 		= $(INITRD_SRC_DIR)/openssh-$(OPENSSH_VERSION)
 OPENSSH_PATCHES 	= $(shell ls $(INITRD_PATCH_DIR)/openssh.*.patch 2>/dev/null | sort)
 
