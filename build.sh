@@ -11,7 +11,7 @@ PWD=$(pwd)
 cd autoconf && ./bootstrap && rm -rf autom4te.cache aclocal.m4
 cd ..
 make source_tarball
-sh makeself/makeself.sh rsyphon.d/ rsyphon-0.$MAJOR.$VERSION.run "rsyphon installer" ./rsyphon.init.sh
+#sh makeself/makeself.sh rsyphon.d/ rsyphon-0.$MAJOR.$VERSION.run "rsyphon installer" ./rsyphon.init.sh
 }
 
 bump_rev(){
